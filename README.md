@@ -1,75 +1,32 @@
-# React + TypeScript + Vite
+# Dev Stack Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive Web Development Technology Catalog designed to help developers explore, compare, and build their ideal tech stack for upcoming software projects.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About The Project
 
-## React Compiler
+Dev Stack Catalog provides a seamless UI for browsing popular frontend, backend, database, and system tooling options. Users can inspect detailed technology specifications—including difficulty levels, ratings, and badges—and curate a custom stack list in real time with interactive UI updates and toast notifications.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend Framework:** React (with Suspense and `use` hook)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS (v4) & Plus Jakarta Sans typography
+- **Icons & Notifications:** React Icons (`tb`), React Toastify
+- **Asset Loading:** Asynchronous Promise fetching (`technologies.json`)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Key Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. **Interactive Stack Management**
+   Select technology cards to add items directly into your personal sidebar. Features duplication checks, individual item removal, and a single-click "Remove All" stack clear functionality.
 
-```
+2. **Real-Time Toast Feedback**
+   Provides visual feedback using `react-toastify` for state actions including additions, duplicate warnings, individual removals, and stack resets.
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+3. **Modern Async UI & Responsive Layout**
+   Leverages React's `Suspense` and dynamic loading spinner states alongside a responsive grid system adapted across mobile, tablet, and desktop viewports.
