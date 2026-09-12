@@ -2,7 +2,7 @@ import logo from "../assets/logo-text.png";
 
 function Footer() {
   return (
-    <footer className="w-full bg-white text-slate-600 pt-16 pb-8 px-4 sm:px-6 lg:px-8 border-t border-slate-100">
+    <footer className="w-full bg-white text-slate-600 pt-16 pb-8 px-4 sm:px-6 lg:px-8 border-t border-slate-100 mt-10">
       <div className="max-w-356.25 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left mb-16">
           <div className="space-y-4 md:col-span-1 flex flex-col items-center md:items-start">
