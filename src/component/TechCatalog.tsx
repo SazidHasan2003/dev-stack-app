@@ -3,6 +3,7 @@ import Cards from "./Cards";
 import type { ITechType } from "./types";
 import { toast } from "react-toastify";
 import { TbX } from "react-icons/tb";
+import Spinner from "./Spinner";
 
 const fetchTechnologies = async (): Promise<ITechType[]> => {
   const res = await fetch("/technologies.json");
@@ -58,7 +59,7 @@ export default function TechCatalog() {
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
           <div className="lg:col-span-3">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Spinner />}>
               <Cards
                 techPromise={techPromise}
                 selectedStack={selectedStack}
