@@ -55,11 +55,11 @@ JSX stands for JavaScript XML. It allows us to write HTML-like code inside JavaS
 `useEffect` allows us to run side effects in a component, such as fetching data from an external source or API when the component renders.
 _(Note: In this project, data was fetched using standard Promises with React's `Suspense` and `use()` hook, but `useEffect` is traditionally used to fetch JSON data after the component mounts)._
 
-### 5. Why does every item in a `.map()` list need a unique `key` prop?
+### 5. Why does every item in a `.map()` list need a unique key prop?
 
 React uses the `key` prop to identify which items have changed, been added, or removed. A unique key helps React update the UI faster and prevents rendering bugs.
 
-### 6. What is conditional rendering? Show one place you used it.
+### 6. What is conditional rendering? Show one place you used it (example: the empty stack message).
 
 Conditional rendering means showing different UI elements based on certain conditions (like an `if/else` statement).
 
@@ -71,3 +71,8 @@ Conditional rendering means showing different UI elements based on certain condi
     /* Render stack items */
   )}
   ```
+
+### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+
+- **Parent to Child:** The parent passes data down to the child using **props** (for example: `tech={tech}`).
+- **Child to Parent:** The parent passes a **function** as a prop to the child. When an event happens, the child calls that function and sends data back as an argument (for example: `onAddToStack(tech)`).
