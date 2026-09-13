@@ -2,3 +2,18 @@
 @theme {
   --font-sans: "Plus Jakarta Sans", sans-serif;
 }
+
+:root {
+  --brand-gradient: linear-gradient(to right, #ff5e62, #d91b7e, #8a239b);
+}
+
+.brand-gradient {
+  background: var(--brand-gradient);
+}
+
+.brand-gradient-text {
+  background: var(--brand-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

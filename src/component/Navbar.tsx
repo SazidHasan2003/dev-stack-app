@@ -20,30 +20,30 @@ function Navbar() {
           <div className="logo md:hidden flex items-center">
             <img src={logo} alt="navbar logo" className="h-8 w-auto" />
           </div>
-          <div className="hidden md:flex items-center text-[#475569]-500 space-x-8">
+          <div className="hidden md:flex items-center text-[#475569] space-x-8">
             <a
               href="#home"
-              className="hover:text-[#DB2777]-500 font-medium transition-colors"
+              className="hover:text-[#DB2777] font-medium transition-colors"
             >
               Home
             </a>
             <a
-              href="#about"
+              href="#Technologies"
+              className="hover:text-[#DB2777] font-medium transition-colors"
+            >
+              Technologies
+            </a>
+            <a
+              href="#Projects"
+              className="hover:text-[#DB2777] font-medium transition-colors"
+            >
+              Projects
+            </a>
+            <a
+              href="#About"
               className="hover:text-[#DB2777] font-medium transition-colors"
             >
               About
-            </a>
-            <a
-              href="#services"
-              className="hover:text-[#DB2777] font-medium transition-colors"
-            >
-              Services
-            </a>
-            <a
-              href="#portfolio"
-              className="hover:text-[#DB2777] font-medium transition-colors"
-            >
-              Portfolio
             </a>
             <a
               href="#contact"

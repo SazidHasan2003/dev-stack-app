@@ -7,10 +7,8 @@ function Hero() {
         {/* Left  */}
         <div className="space-y-6 text-center md:text-left">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            <span className="text-slate-900 block">Build Your Ideal</span>
-            <span className="bg-linear-to-r from-[#FF5E62] via-[#D91B7E] to-[#8A239B] bg-clip-text text-transparent">
-              Development Stack
-            </span>
+            <span className="text-slate-900 block ">Build Your Ideal</span>
+            <span className="brand-gradient-text">Development Stack</span>
           </h1>
 
           <p className="text-slate-600 text-base sm:text-lg max-w-xl leading-relaxed mx-auto md:mx-0">
@@ -21,7 +19,7 @@ function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
-            <button className="px-6 py-3.5 text-sm sm:text-base font-semibold text-white bg-linear-to-r from-[#FF5E62] via-[#D91B7E] to-[#8A239B] hover:opacity-90 rounded-xl transition duration-200 shadow-md cursor-pointer">
+            <button className="px-6 py-3.5 text-sm sm:text-base font-semibold text-white brand-gradient hover:opacity-90 rounded-xl transition duration-200 shadow-md cursor-pointer">
               Explore Technologies
             </button>
             <button className="px-8 py-3.5 text-sm sm:text-base font-semibold text-slate-800 border border-slate-200 bg-white hover:bg-slate-50 rounded-xl transition duration-200 cursor-pointer">
